@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Лабораторная работа №2. Морской бой</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.0.1/socket.io.js"></script>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+    <script src="/index.js"></script>
+    <div id="game-container">
+        <table id="left-table">
+            <caption>Ваше поле</caption>
+            <tbody>
+                <!-- Левая таблица будет создана динамически с помощью JavaScript -->
+            </tbody>
+        </table>
+
+        <table id="right-table">
+            <caption>Поле противника</caption>
+            <tbody>
+                <!-- Правая таблица будет создана динамически с помощью JavaScript -->
+            </tbody>
+        </table>
+        <% if (playername == "player1") { %>
+            <button id="startGame" onclick="startGame('player1')">Старт</button>
+        <% } else if (playername == "player2") { %>
+            <button id="startGame" onclick="startGame('player2')">Старт</button>
+        <% } %>
+        <% if (playername == "player1") { %>
+            <button id="fire" onclick="fire('player1')">Сделать выстрел</button>
+        <% } else if (playername == "player2") { %>
+            <button id="fire" onclick="fire('player2')">Сделать выстрел</button>
+        <% } %>
+        
+    </div>
+</body>
+</html>

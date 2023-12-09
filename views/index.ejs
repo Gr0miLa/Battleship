@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Лабораторная работа №2. Морской бой</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body class="page_start">
+    <div>
+        <% if (!gameStarted) { %>
+            <a href="/player1">
+                <button class="start">Начать игру</button>
+            </a>
+        <% } else { %>
+            <a href="/player2">
+                <button class="start">Присоединиться к игре</button>
+            </a>
+        <% } %>
+    </div>
+</body>
+</html>
