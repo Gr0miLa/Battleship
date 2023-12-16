@@ -1,27 +1,22 @@
-/* Главная странциа */
-
 body.page_start {
     display: flex;
     align-items: center;
     justify-content: center;
     height: 100vh;
     margin: 0;
-
     background-image: url('images/background.jpg');
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
 }
 
-.start {
+.start, .join {
     font-family: 'Comic Sans MS', cursive;
     text-align: center;
     width: 400px;
     height: 120px;
-    /* background-color: rgb(19, 214, 29); */
     font-size: 48px;
     border-radius: 10px;
-    /* box-shadow: 4px 4px 4px 4px rgba(0, 0, 0, 0.5); */
     background: none;
     background-repeat: no-repeat;
     background-image: url('images/button.png'); /* Задаем фоновую картинку */
@@ -30,7 +25,7 @@ body.page_start {
     border: none;
 }
 
-.start:hover {
+.start:hover, .join:hover {
     /* background-color: rgb(16, 228, 27); */
     font-size: 50px;
     width: 406px;
@@ -38,15 +33,12 @@ body.page_start {
     transform: rotate(1deg);
 }
 
-.start:active {
+.start:active, .join:hover {
     /* background-color: rgb(19, 214, 29); */
     font-size: 48px;
     width: 400px;
     height: 120px;
 }
-
-
-/* Страница с игрой */
 
 
 table {

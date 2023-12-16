@@ -1,3 +1,6 @@
 [Nn]ode_modules/
 *.json
 [Ii]mages/
+*.db
+password.txt
+main.zip

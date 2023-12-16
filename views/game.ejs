@@ -8,31 +8,25 @@
     <link rel="stylesheet" href="/style.css">
 </head>
 <body>
-    <script src="/index.js"></script>
+    <script src="/game.js"></script>
     <div id="game-container">
         <table id="left-table">
             <caption>Ваше поле</caption>
             <tbody>
-                <!-- Левая таблица будет создана динамически с помощью JavaScript -->
+                <!-- Верхняя таблица (своя) -->
             </tbody>
         </table>
 
         <table id="right-table">
             <caption>Поле противника</caption>
             <tbody>
-                <!-- Правая таблица будет создана динамически с помощью JavaScript -->
+                <!-- Нижняя таблица (вражеская) -->
             </tbody>
         </table>
-        <% if (playername == "player1") { %>
-            <button id="startGame" onclick="startGame('player1')">Старт</button>
-        <% } else if (playername == "player2") { %>
-            <button id="startGame" onclick="startGame('player2')">Старт</button>
-        <% } %>
-        <% if (playername == "player1") { %>
-            <button id="fire" onclick="fire('player1')">Сделать выстрел</button>
-        <% } else if (playername == "player2") { %>
-            <button id="fire" onclick="fire('player2')">Сделать выстрел</button>
-        <% } %>
+        <button id="startGame" onclick="startGame('<%=(playername)%>')">Старт</button>
+        <button id="fire" onclick="fire('<%=(playername)%>')">Сделать выстрел</button>
+        <p id="wait">Ожидание противника...</p>
+        <p id="end">Игра окончена</p>
         
     </div>
 </body>
